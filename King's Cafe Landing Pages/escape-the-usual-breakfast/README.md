@@ -27,3 +27,10 @@ A source repository link displays code, not the rendered landing page. A team-on
 Original live variant: https://kings-cafe-breakfast-labrador.gubaraabdalla.chatgpt.site/escape-the-usual
 
 This handoff excludes Sites project identity, Git metadata, installed dependencies, credentials and environment files.
+
+
+## Shared booking integration — 15 November 2026
+
+The form now uses `src/booking-client.js` to send campaign/UTM/click-ID context and a retry key, and only acknowledges a real submission after the API returns a saved booking receipt. Preview mode remains active when `VITE_RESERVATION_ENDPOINT` is unset. No customer contact details are added to the thank-you URL.
+
+The shared backend, customer database and protected `/bookings` screen are in [`../../booking-service`](../../booking-service). The combined Docker deployment builds this campaign with `/api/bookings` enabled. For separate hosting, set the endpoint in an ignored `.env.local`, rebuild, and allow the landing page’s origin on the backend. A URL alone does not create a booking service; deploy and verify the service first. Existing design preview artifacts have been rebuilt and remain non-booking previews.

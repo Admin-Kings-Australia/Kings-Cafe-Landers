@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {attribution,sendBooking} from '../../King\'s Cafe Landing Pages/escape-the-usual-breakfast/source/src/booking-client.js';
+test('captures campaign tags without unrelated URL values or guest data',()=>{const a=attribution({pathname:'/breakfast',search:'?utm_source=meta&utm_content=creative-2&email=private@example.com&fbclid=123'});assert.equal(a.utm_source,'meta');assert.equal(a.utm_content,'creative-2');assert.equal(a.fbclid,'123');assert.equal(a.email,undefined);assert.equal(a.landing_path,'/breakfast')});
+test('booking client sends retry key and only accepts a saved receipt',async t=>{let sent;t.mock.method(globalThis,'fetch',async(url,options)=>{sent=options;return {ok:true,json:async()=>({id:'saved-booking',status:'pending'})}});const result=await sendBooking('/api/bookings',{name:'Test'},'stable-retry-key');assert.equal(result.id,'saved-booking');assert.equal(sent.headers['Idempotency-Key'],'stable-retry-key');assert.equal(JSON.parse(sent.body).name,'Test')});
+test('client refuses a success page without a real booking receipt',async t=>{t.mock.method(globalThis,'fetch',async()=>({ok:true,json:async()=>({ok:true})}));await assert.rejects(sendBooking('/api/bookings',{},'key'),/could not verify/)});
+test('validation failure is surfaced without claiming receipt',async t=>{t.mock.method(globalThis,'fetch',async()=>({ok:false,json:async()=>({error:'Please choose a future time.'})}));await assert.rejects(sendBooking('/api/bookings',{},'key'),/future time/)});
