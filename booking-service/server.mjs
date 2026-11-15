@@ -87,6 +87,6 @@ export function makeHandler({store,password,origins=[],secure=true,trustProxy=fa
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   const path=resolve(process.env.DATABASE_PATH||'./data/bookings.sqlite');mkdirSync(dirname(path),{recursive:true});
-  const origins=(process.env.ALLOWED_ORIGINS||'http://localhost:4174').split(',').map(x=>x.trim()).filter(Boolean);
+  const origins=[...(process.env.ALLOWED_ORIGINS||'http://localhost:4174').split(','),process.env.RENDER_EXTERNAL_URL||''].map(x=>x.trim()).filter(Boolean);
   http.createServer(makeHandler({store:openStore(path),password:process.env.STAFF_PASSWORD,origins,secure:process.env.NODE_ENV==='production',trustProxy:process.env.TRUST_PROXY==='true'})).listen(Number(process.env.PORT||4174),process.env.HOST||'127.0.0.1',()=>console.log('KINGS bookings server ready on port '+(process.env.PORT||4174)));
 }
