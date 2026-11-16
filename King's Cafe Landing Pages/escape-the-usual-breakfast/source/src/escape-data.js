@@ -93,6 +93,10 @@ export const rating={score:4.6,count:76,source:'https://maps.app.goo.gl/FZMC6q77
 export const directions='https://www.google.com/maps/dir/?api=1&destination=KINGS+Cafe+10A+Frank+Street+Labrador+QLD+4215';
 export const questions = [
   [
+    "What’s included in the free coffee offer?",
+    "Each breakfast dish ordered comes with one free medium coffee. All coffee types are included, including iced coffee, with no extra charge for milk, syrups or other coffee extras. For example, two breakfast dishes earn two free coffees. Drinks, sides and add-ons ordered on their own don’t qualify. The offer ends 18 December 2026."
+  ],
+  [
     "What comes with the Lebanese Breakfast?",
     "Fried or scrambled eggs, grilled sujuk, olives, fresh tomato, cucumber, labneh and za’atar with extra virgin olive oil. Warm pita bread is included."
   ],

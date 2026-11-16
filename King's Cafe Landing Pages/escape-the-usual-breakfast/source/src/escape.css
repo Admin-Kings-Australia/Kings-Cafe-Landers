@@ -25,3 +25,40 @@
 .e-footer{align-items:center}.e-footer>span{max-width:440px}.escape-shell .preview{text-transform:none;line-height:1.5}.escape-shell .thank-you h1{font-size:clamp(38px,5vw,64px);max-width:850px;margin-inline:auto;line-height:1.15}.escape-shell dialog .modal-image>span{font-size:32px;line-height:1.25;text-transform:none}.escape-shell dialog .modal-image em{display:block}
 @media(min-width:651px) and (max-width:1000px){.escape-page .e-product h1{font-size:36px}.e-product .e-hero-photo{min-height:680px}.e-story{min-height:510px;padding-top:120px}.escape-page .e-story-copy h2{font-size:26px}.e-story-copy p{font-size:15px}.e-story-copy li{font-size:14px}.e-section-heading{gap:24px}.e-familiar-grid{gap:20px}}
 @media(max-width:650px){.escape-page .e-product h1{font-size:34px;line-height:1.16;letter-spacing:-.03em}.e-product .e-hero-photo{min-height:0;width:100%;aspect-ratio:1.05;align-self:auto}.e-product .e-hero-photo-caption{gap:2px}.e-hero-photo-caption span:first-child{font-size:13px}.e-hero-photo-caption span:last-child{font-size:11px}.e-story{min-height:430px;padding-top:130px}.escape-page .e-story-copy h2{font-size:31px}.e-story-copy .e-kicker{font-size:10px}.e-section-heading>p{max-width:none}.escape-page .e-section-heading h2,.escape-page .e-textures h2,.escape-page .e-place h2,.escape-page .e-faq h2,.escape-page .e-google-heading h2{font-size:34px}.e-reviews .e-section-heading{align-items:flex-end}.e-review-controls{flex-shrink:0}.escape-page .e-reviews h2{font-size:31px}.e-familiar-grid article{grid-template-columns:100px 1fr;gap:0 16px}.e-familiar-grid img{height:100px}.e-familiar-grid h3{margin-top:0}.escape-page .e-familiar-grid p{font-size:16px!important}.e-footer>span{width:100%;max-width:none}.escape-page .e-sticky .e-book{font-size:12px}.escape-shell .preview{font-size:10px;padding:5px 10px}.escape-shell dialog .modal-body h2{font-size:30px}}
+
+/* Free coffee launch offer. */
+.escape-page .e-offer-bar{display:block;overflow:hidden;background:#edc29d;color:#211e18;text-decoration:none;padding:11px 0;line-height:1.4}
+.e-offer-ticker{display:flex;width:max-content;animation:coffee-announcement 55s linear infinite}
+.e-offer-ticker-group{display:flex;flex-shrink:0}
+.e-offer-ticker strong{font-size:15px;font-weight:700;white-space:nowrap;display:block;padding-inline:48px}
+.e-offer-bar:hover .e-offer-ticker,.e-offer-bar:focus .e-offer-ticker,.e-offer-bar:focus-within .e-offer-ticker{animation-play-state:paused}
+.escape-page .e-offer-bar:focus-visible{outline:3px solid #211e18;outline-offset:-4px}
+@keyframes coffee-announcement{to{transform:translateX(-50%)}}
+.escape-page .e-offer-reminder{color:#edc29d;font-size:17px;font-weight:600;line-height:1.5;margin:0 0 13px}
+.e-coffee-offer{display:grid;grid-template-columns:1.12fr 1fr;gap:6%;align-items:center;background:#292d27;border-top:1px solid #555443;border-bottom:1px solid #555443;scroll-margin-top:30px}
+.e-coffee-offer-copy{min-width:0}
+.escape-page .e-coffee-offer .e-kicker{color:#edc29d}
+.escape-page .e-coffee-offer h2{font-size:clamp(36px,3.8vw,52px);line-height:1.12;letter-spacing:-.025em;margin:17px 0 25px;max-width:610px;text-wrap:pretty}
+.escape-page .e-coffee-offer-copy>p{color:#e1dfd4;font-size:17px;line-height:1.75;margin:0 0 19px}
+.e-coffee-offer-copy strong{color:#fff6e7;font-weight:600}
+.e-coffee-offer .e-book{margin-top:8px}
+.escape-page .e-coffee-offer-copy>.e-offer-clarification{font-size:13px;line-height:1.6;color:#c5c7ba;margin:16px 0 11px;max-width:460px}
+.escape-page .e-coffee-offer-copy>.e-offer-date{font-size:13px;line-height:1.6;color:#edc29d;margin:0}
+.e-offer-date a{color:inherit;text-underline-offset:4px}
+.e-coffee-offer-photo{margin:0;align-self:stretch;min-width:0;min-height:560px;overflow:hidden}
+.e-coffee-offer-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+#coffee-offer-faq{scroll-margin-top:30px}
+@media(max-width:850px){.e-coffee-offer{grid-template-columns:1fr;gap:32px}.e-coffee-offer-photo{min-height:0;aspect-ratio:1.35}.e-coffee-offer-copy{max-width:650px}.e-coffee-offer .e-book{width:100%}}
+@media(max-width:650px){.escape-page .e-offer-bar{padding:10px 0}.e-offer-ticker strong{font-size:13px;padding-inline:25px}.e-offer-ticker{animation-duration:65s}.escape-page .e-offer-reminder{font-size:16px}.escape-page .e-coffee-offer h2{font-size:36px}.escape-page .e-coffee-offer-copy>p{font-size:17px}.e-coffee-offer-photo{aspect-ratio:1.05}.escape-page .e-coffee-offer-copy>.e-offer-clarification,.escape-page .e-coffee-offer-copy>.e-offer-date{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.e-offer-ticker{animation:none;width:100%;justify-content:center}.e-offer-ticker-group:not(:first-child),.e-offer-ticker-group strong:not(:first-child){display:none}.e-offer-ticker strong{padding-inline:12px;white-space:normal;text-align:center}}
+
+.escape-page .e-offer-ticker em{color:inherit;font-family:inherit;font-weight:700;font-style:italic}
+
+/* Separate, authentic KINGS photos; no compositing or generated coffee. */
+.e-coffee-offer-photos{display:grid;grid-template-rows:auto minmax(180px,1fr);gap:16px;align-self:stretch;min-width:0}
+.e-coffee-offer-photos .e-coffee-offer-photo{min-height:0;aspect-ratio:auto}
+.e-coffee-offer-photos .e-coffee-panda{aspect-ratio:1.21}
+.e-coffee-panda img{object-position:center top}
+.e-coffee-breakfast img{object-position:center 58%;max-height:310px}
+@media(max-width:850px){.e-coffee-offer-photos{grid-template-columns:1.15fr 1fr;grid-template-rows:auto}.e-coffee-offer-photos .e-coffee-breakfast{aspect-ratio:auto}.e-coffee-breakfast img{max-height:none}}
+@media(max-width:650px){.e-coffee-offer-photos{grid-template-columns:1fr;gap:14px}.e-coffee-offer-photos .e-coffee-breakfast{aspect-ratio:1.6}}
