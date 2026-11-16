@@ -54,11 +54,7 @@
 
 .escape-page .e-offer-ticker em{color:inherit;font-family:inherit;font-weight:700;font-style:italic}
 
-/* Separate, authentic KINGS photos; no compositing or generated coffee. */
-.e-coffee-offer-photos{display:grid;grid-template-rows:auto minmax(180px,1fr);gap:16px;align-self:stretch;min-width:0}
-.e-coffee-offer-photos .e-coffee-offer-photo{min-height:0;aspect-ratio:auto}
-.e-coffee-offer-photos .e-coffee-panda{aspect-ratio:1.21}
+/* Real KINGS panda coffee photograph. */
+.e-coffee-offer-photos{align-self:center;min-width:0}
+.e-coffee-offer-photos .e-coffee-offer-photo{min-height:0;aspect-ratio:1.21}
 .e-coffee-panda img{object-position:center top}
-.e-coffee-breakfast img{object-position:center 58%;max-height:310px}
-@media(max-width:850px){.e-coffee-offer-photos{grid-template-columns:1.15fr 1fr;grid-template-rows:auto}.e-coffee-offer-photos .e-coffee-breakfast{aspect-ratio:auto}.e-coffee-breakfast img{max-height:none}}
-@media(max-width:650px){.e-coffee-offer-photos{grid-template-columns:1fr;gap:14px}.e-coffee-offer-photos .e-coffee-breakfast{aspect-ratio:1.6}}
