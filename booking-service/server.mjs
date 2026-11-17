@@ -65,7 +65,7 @@ export function makeHandler({store,password,origins=[],secure=true,trustProxy=fa
         const root=resolve(here,'landing');
         const relative=decodeURIComponent(url.pathname.slice('/escape-the-usual-breakfast/'.length))||'index.html';
         const file=resolve(root,relative);
-        const types={html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8',png:'image/png',webp:'image/webp',pdf:'application/pdf',woff2:'font/woff2'};
+        const types={html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8',jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp',pdf:'application/pdf',woff2:'font/woff2'};
         const type=types[file.split('.').pop()];
         if(!file.startsWith(root+'/')||!type||!existsSync(file))return send(404,{error:'Not found.'});
         const data=readFileSync(file);

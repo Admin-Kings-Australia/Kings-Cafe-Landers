@@ -1,24 +1,135 @@
-// Verified against the café's published breakfast PDF on 13 November 2026.
+// Copy supplied by the owner’s copywriter on 15 November 2026.
 export const dishes = [
- {id:'lebanese',name:'The Lebanese Breakfast',price:'26.90',label:'YOUR FIRST TASTE OF SOMETHING DIFFERENT',description:'Eggs fried or scrambled. Grilled sujuk, olives, fresh tomato and cucumber. Creamy labneh, za’atar and extra virgin olive oil. And warm pita to bring it all together.',explain:'Sujuk is a spiced sausage. Labneh is a thick, tangy strained yoghurt. Za’atar brings a savoury herb-and-sesame finish.',diet:'Halal Certified'},
- {id:'turkish',name:'Turkish Eggs',price:'22.90',label:'DIP. SCOOP. REPEAT.',description:'Poached eggs nestled in creamy tahini yoghurt, finished with warm chilli butter and fresh herbs. Toasted Turkish bread makes every dip count.',explain:'Tahini is a creamy sesame paste. Here it brings a nutty richness to the yoghurt.',diet:'Vegetarian · Gluten-free option available · Contains sesame'},
- {id:'fatteh',name:'The Levant Bowl',price:'16.90',label:'MEET FATTEH',description:'Warm chickpeas and crisp toasted pita, layered with tahini yoghurt and garlic. Finished with toasted almonds, parsley, cinnamon and pomegranate.',explain:'Fatteh is all about layers: warm and cool, creamy and crisp, with a little sweetness in every spoonful.',diet:'Vegetarian · Contains sesame and almonds'}
+  {
+    "id": "lebanese",
+    "name": "The Lebanese Breakfast",
+    "price": "26.90",
+    "label": "A Fresh Take on Your Breakfast Plans",
+    "description": "Choose fried or scrambled eggs, served with grilled sujuk, olives, fresh tomato and cucumber, labneh and za’atar with extra virgin olive oil. Tear into the warm pita and enjoy a little of everything.",
+    "explain": "New to sujuk or labneh? Sujuk is a spiced sausage, and labneh is a thick, strained yoghurt.",
+    "diet": "Halal Certified"
+  },
+  {
+    "id": "turkish",
+    "name": "Turkish Eggs",
+    "price": "22.90",
+    "label": "Creamy Yoghurt, Warm Chilli Butter and Bread for Dipping",
+    "description": "Poached eggs on creamy tahini yoghurt, finished with warm chilli butter and fresh herbs. Served with toasted Turkish bread so you can scoop up the yoghurt, eggs and butter together.",
+    "explain": "Tahini is a sesame paste that gives the yoghurt its nutty flavour.",
+    "diet": "Vegetarian · Gluten-free option available · Contains sesame"
+  },
+  {
+    "id": "fatteh",
+    "name": "The Levant Bowl (Fatteh)",
+    "price": "16.90",
+    "label": "Discover Something Creamy, Crisp and Full of Flavour",
+    "description": "Warm chickpeas layered with crispy toasted pita, creamy tahini yoghurt and garlic. Finished with toasted almonds, fresh parsley, cinnamon and pomegranate seeds. There’s plenty to discover in every spoonful.",
+    "explain": "Meet fatteh: a layered dish that brings warm chickpeas, creamy yoghurt and crisp pita together.",
+    "diet": "Vegetarian · Contains sesame and almonds"
+  }
 ];
-// Complete reviews from the owner’s supplied Google text. Em-dash punctuation normalised at their request.
-// Individual star ratings appear only when explicitly confirmed by the pasted owner response.
-export const reviewData=[{"name": "Maddy Francia", "quote": "The most incredible breakfast we’ve had for a long while. The new menu is amazing and brings such a fresh middle eastern flavor to the Gold Coast. Highly recommend and can’t wait to come back with the rest of the family!", "rating": null, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}, {"name": "Afiq Anuary", "quote": "We went for brunch and had the carrot cake and a mocha. Both tasted great and were good value for money. The café was very clean, had a great atmosphere, and is also halal. Highly recommended", "rating": null, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}, {"name": "Jacinta Stevens", "quote": "Outstanding Breakfast\nStopped by The Kings Café for breakfast and was blown away. Everything was perfectly cooked, delicious, and fresh. The staff were welcoming and friendly, the service was excellent and the coffee was sensational. Will definitely be back!", "rating": null, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}];
-export const moreReviews=[{"name": "Kaz Boehm", "quote": "Excellent customer service, the meals have all been great. We had dinner here on the first night of our holiday and we enjoyed it so much that we came back for breakfast and dinner on two different days. Kids meals are a great size and variety. Would definitely recommend for breakfast or dinner!", "rating": 5, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}, {"name": "Emad Hassan", "quote": "I popped by for breakfast with my mates had a great selection of Breakfast food in Gold Coast, Good service", "rating": 5, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}, {"name": "nadia valli", "quote": "Fantastic food and impeccable service! Couldn't fault a single thing about our meal here. The atmosphere is wonderful and the staff go above and beyond to look after you. Easily one of my favourite spots around the Southport area. Thank you to Nicole and Chef Matthew for the great food and experience", "rating": null, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}, {"name": "Joey Friend", "quote": "beautiful restaurant, lovely atmosphere and very attentive staff. would highly recommend this place and will be back in the near future", "rating": 5, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}, {"name": "Ziana Ali", "quote": "The wonderful team at Kings served up a delicious breakfast and were able to cater to all our requests. Much recommended!", "rating": null, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}, {"name": "Zaidaan", "quote": "Absolutely amazing experience! The food was delicious, and the service was spectacular.Nichole was incredibly friendly, helpful, and welcoming throughout our visit.She really made the experience even better.Thank you for the great service and wonderful experience, we’ll definitely be back!", "rating": 5, "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"}];
-// Business-wide Google rating supplied by the owner on 14 November 2026.
+// Exact supplied excerpts. Individual ratings are omitted.
+export const reviewData = [
+  {
+    "name": "Maddy Francia",
+    "quote": "The most incredible breakfast we’ve had for a long while. The new menu is amazing and brings such a fresh middle eastern flavor to the Gold Coast. Highly recommend and can’t wait to come back with the rest of the family!",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  },
+  {
+    "name": "Ivana Manwin",
+    "quote": "Amazing Lebanese breakfast! It’s so refreshing to see a diverse choice of breakfast not your typical ‘eggs and benny’.",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  },
+  {
+    "name": "Jacinta Stevens",
+    "quote": "The staff were welcoming and friendly, the service was excellent and the coffee was sensational.",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  }
+];
+// Exact supplied excerpts. Individual ratings are omitted.
+export const moreReviews = [
+  {
+    "name": "Kaz Boehm",
+    "quote": "We had dinner here on the first night of our holiday and we enjoyed it so much that we came back for breakfast and dinner on two different days.",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  },
+  {
+    "name": "Emad Hassan",
+    "quote": "I popped by for breakfast with my mates had a great selection of Breakfast food in Gold Coast, Good service",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  },
+  {
+    "name": "nadia valli",
+    "quote": "The atmosphere is wonderful and the staff go above and beyond to look after you.",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  },
+  {
+    "name": "Joey Friend",
+    "quote": "beautiful restaurant, lovely atmosphere and very attentive staff. would highly recommend this place and will be back in the near future",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  },
+  {
+    "name": "Ziana Ali",
+    "quote": "The wonderful team at Kings served up a delicious breakfast and were able to cater to all our requests. Much recommended!",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  },
+  {
+    "name": "Zaidaan",
+    "quote": "Nichole was incredibly friendly, helpful, and welcoming throughout our visit.She really made the experience even better.",
+    "rating": null,
+    "source": "https://maps.app.goo.gl/FZMC6q77i89NgKHa9"
+  }
+];
+// Venue-wide Google Maps rating verified on 16 November 2026: 4.6 from 76 reviews.
 export const rating={score:4.6,count:76,source:'https://maps.app.goo.gl/FZMC6q77i89NgKHa9'};
 export const directions='https://www.google.com/maps/dir/?api=1&destination=KINGS+Cafe+10A+Frank+Street+Labrador+QLD+4215';
-export const questions=[
- ['What comes with the Lebanese Breakfast?',dishes[0].description],
- ['Will my usual-breakfast person find something they like?','Yes. Try the Benny Bagel, Eggs Your Way, The Maple Stack pancakes or KINGS Smashed Avo. Our menu brings familiar café favourites alongside Middle Eastern breakfast dishes.'],
- ['Which vegetarian choices are available?','Turkish Eggs, The Levant Bowl, KINGS Smashed Avo and The Maple Stack are marked vegetarian on our menu. Vegetarian does not mean vegan. Please discuss allergies with our team; we cannot guarantee an allergen-free kitchen.'],
- ['Is KINGS halal certified?','Yes. KINGS Café is Halal Certified.'],
- ['Which dishes use beef rashers?','The Benny Bagel offers beef rashers or smoked salmon. Beef rashers also feature in the KINGS Big Breakfast and B.E.C Bagel, and are available as an add-on on the menu.'],
- ['Can I walk in?','For a same-day visit, call 0436 340 324 to check whether a table is available.'],
- ['How do reservations work?','Choose your preferred morning and party size, then share your contact details. Requests are subject to the team’s confirmation; selecting a time does not guarantee availability.'],
- ['Can families or larger groups book?','Let us know your group size and any seating needs. The team will confirm what can be accommodated. The kids’ menu is for children aged 12 and under.'],
- ['When does the breakfast kitchen close?','Please call 0436 340 324 to check the kitchen’s last breakfast orders for your chosen day before travelling.']
-];
+export const questions = [
+  [
+    "What’s included in the free coffee offer?",
+    "Each breakfast dish ordered comes with one free medium coffee. All coffee types are included, including iced coffee, with no extra charge for milk, syrups or other coffee extras. For example, two breakfast dishes earn two free coffees. Drinks, sides and add-ons ordered on their own don’t qualify. The offer ends 18 December 2026."
+  ],
+  [
+    "What comes with the Lebanese Breakfast?",
+    "Fried or scrambled eggs, grilled sujuk, olives, fresh tomato, cucumber, labneh and za’atar with extra virgin olive oil. Warm pita bread is included."
+  ],
+  [
+    "Are there familiar café breakfasts too?",
+    "Yes. Choose from the Benny Bagel, Eggs Your Way, The Maple Stack pancakes, KINGS Smashed Avo and more. You can explore something new while the person joining you enjoys a familiar favourite."
+  ],
+  [
+    "What vegetarian options are available?",
+    "The standard Turkish Eggs, The Levant Bowl, KINGS Smashed Avo and The Maple Stack are marked vegetarian on our menu. Please tell the team about any allergies or dietary needs before ordering. We cannot guarantee that food or drinks are completely free of allergens."
+  ],
+  [
+    "Is Kings halal certified?",
+    "Yes. KINGS Café is halal certified."
+  ],
+  [
+    "Do you serve beef rashers?",
+    "Yes. The Benny Bagel offers a choice of beef rasher or smoked salmon. Beef rashers also feature in the KINGS Big Breakfast and B.E.C Bagel, and are available as an add-on."
+  ],
+  [
+    "Can I visit without a booking?",
+    "For a same-day visit, call 0436 340 324 to check whether a table is available."
+  ],
+  [
+    "How do I book a breakfast table?",
+    "Select “Book Your Breakfast Table Now” and follow the booking steps. Your reservation is for a table, so you can choose your meal when you visit."
+  ],
+  [
+    "Can I book for my family or a larger group?",
+    "Let us know how many people are joining you and any seating needs. The team can advise what can be accommodated. Our kids’ menu is for children aged 12 and under."
+  ],
+  [
+    "What time does the breakfast kitchen close?",
+    "Call 0436 340 324 to check the last breakfast orders for your chosen day before travelling."
+  ]
+].map(([q,a])=>[q,q==='How do I book a breakfast table?' ? a+(import.meta.env.VITE_RESERVATION_ENDPOINT ? ' Your request is subject to the team’s confirmation.' : ' This page is a design preview. No reservation is sent or confirmed.') : a]);
